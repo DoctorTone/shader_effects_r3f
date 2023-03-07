@@ -13,3 +13,13 @@ body,
 body {
   background: #4e4b4b;
 }
+
+.panel {
+    position: absolute;
+    width: 100%;
+  }
+
+#title {
+    left: 0;
+    top: 5%;
+}
