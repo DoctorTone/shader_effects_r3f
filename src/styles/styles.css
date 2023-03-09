@@ -15,11 +15,17 @@ body {
 }
 
 .panel {
-    position: absolute;
-    width: 100%;
-  }
+  position: absolute;
+  width: 100%;
+}
 
+.text-center {
+  text-align: center;
+}
+.text-orange {
+  color: orange;
+}
 #title {
-    left: 0;
-    top: 5%;
+  left: 0;
+  top: 2.5%;
 }

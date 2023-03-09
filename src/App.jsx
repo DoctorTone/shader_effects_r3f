@@ -1,20 +1,18 @@
-import {Canvas} from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import ThreeApp from "./components/ThreeApp.jsx";
-import Button from '@mui/material/Button';
-import "./styles/styles.css"
+import Title from "./UI/Title.jsx";
+
+import "./styles/styles.css";
 
 function App() {
-
   return (
     <>
       <Canvas>
         <ThreeApp />
       </Canvas>
-      <div id="title" className="panel">
-        <Button variant="contained">Shaders</Button>
-      </div>
-      </>
-  )
+      <Title />
+    </>
+  );
 }
 
-export default App
+export default App;
