@@ -10,6 +10,10 @@ body,
   color: black;
 }
 
+.canvas3D {
+  background-color: #4e4b4b;
+}
+
 body {
   background: #4e4b4b;
 }

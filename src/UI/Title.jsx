@@ -1,10 +1,15 @@
 import React from "react";
+import { Typography } from "@mui/material";
 
 const Title = () => {
   return (
-    <h1 id="title" className="panel text-center text-orange">
+    <Typography
+      sx={{ pl: 5 }}
+      variant="h4"
+      id="title"
+      className="panel text-orange">
       Shaders and Effects
-    </h1>
+    </Typography>
   );
 };
 
