@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { MenuItem } from "@mui/material";
+import useStore from "../state/store.js";
 
 const EffectSelect = () => {
-  const [effect, setEffect] = useState("block");
+  const setActiveEffect = useStore((state) => state.setActiveEffect);
+  const activeEffect = useStore((state) => state.activeEffect);
 
   const changeEffect = (event) => {
-    setEffect(event.target.value);
+    setActiveEffect(event.target.value);
   };
 
   return (
@@ -18,7 +20,7 @@ const EffectSelect = () => {
         <Select
           labelId="effectLabel"
           id="effectControl"
-          value={effect}
+          value={activeEffect}
           label="Effect"
           onChange={changeEffect}>
           <MenuItem value={"block"}>Block</MenuItem>
