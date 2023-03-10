@@ -20,7 +20,6 @@ body {
 
 .panel {
   position: absolute;
-  width: 100%;
 }
 
 .text-center {
@@ -32,4 +31,9 @@ body {
 #title {
   left: 0;
   top: 2.5%;
+  width: 50%;
+}
+#effect {
+  left: 2%;
+  top: 20%;
 }
