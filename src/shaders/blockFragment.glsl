@@ -1,6 +1,9 @@
 uniform float time;
-uniform vec3 color;
+uniform sampler2D map;
 varying vec2 vUv;
+
 void main() {
-    gl_FragColor.rgba = vec4(0.5 + 0.3 * sin(vUv.yxx) + color, 1.0);
+    vec4 _texture = texture2D(map, vUv);
+    gl_FragColor.rgb = _texture.rgb;
+    gl_FragColor.a = 1.0;
 }
