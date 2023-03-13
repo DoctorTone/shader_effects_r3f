@@ -15,17 +15,22 @@ const EffectSelect = () => {
 
   return (
     <div id="effect" className="panel">
-      <FormControl fullWidth>
-        <InputLabel id="effectLabel">Effect</InputLabel>
+      <FormControl fullWidth color="warning">
+        <InputLabel id="effectLabel" sx={{ color: "lightgrey" }}>
+          Effect
+        </InputLabel>
         <Select
+          variant="outlined"
           labelId="effectLabel"
           id="effectControl"
           value={activeEffect}
           label="Effect"
-          onChange={changeEffect}>
+          onChange={changeEffect}
+          sx={{ color: "white" }}>
           <MenuItem value={"block"}>Block</MenuItem>
           <MenuItem value={"pattern"}>Pattern</MenuItem>
           <MenuItem value={"flip"}>Flip</MenuItem>
+          <MenuItem value={"rings"}>Rings</MenuItem>
         </Select>
       </FormControl>
     </div>
