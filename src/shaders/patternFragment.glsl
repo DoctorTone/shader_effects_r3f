@@ -1,9 +1,19 @@
 varying vec2 vUv;
 uniform float time;
+const float PI = 3.141592;
 
 float random(vec2 st)
 {
     return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+}
+
+float getValues(float min, float max, float frequency)
+{
+    float value = sin(PI * time * frequency);
+    float delta = (max - min)/2.0;
+    value *= delta;
+    float offset = (max + min) / 2.0;
+    return value += offset;
 }
 
 void main()
@@ -20,9 +30,9 @@ void main()
 
     // float strength = distance(vUv, vec2(0.5)) * 2.0;
 
-    float offset = 0.2 + ((sin(3.14159 * time * 0.25) + 1.0) * 0.15);
+    float offset = getValues(0.2, 0.4, 0.5);
     vec2 wavyUV = vec2(
-        vUv.x + sin(vUv.y * 50.0) * 0.1,
+        vUv.x + sin(vUv.y * 100.0) * 0.1,
         vUv.y + sin(vUv.x * 100.0) * 0.1
     );
     float strength = 1.0 - step(0.05, abs(distance(wavyUV, vec2(0.5)) - offset));
