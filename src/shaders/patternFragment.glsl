@@ -32,7 +32,7 @@ void main()
 
     float offset = getValues(0.2, 0.4, 0.5);
     vec2 wavyUV = vec2(
-        vUv.x + sin(vUv.y * 100.0) * 0.1,
+        vUv.x + sin(vUv.y * getValues(75.0, 100.0, 0.25)) * 0.1,
         vUv.y + sin(vUv.x * 100.0) * 0.1
     );
     float strength = 1.0 - step(0.05, abs(distance(wavyUV, vec2(0.5)) - offset));
