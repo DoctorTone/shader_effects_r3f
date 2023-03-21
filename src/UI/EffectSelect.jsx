@@ -27,9 +27,10 @@ const EffectSelect = () => {
           label="Effect"
           onChange={changeEffect}
           sx={{ color: "white" }}>
-          <MenuItem value={"block"}>Block</MenuItem>
-          <MenuItem value={"pattern"}>Pattern</MenuItem>
-          <MenuItem value={"flip"}>Flip</MenuItem>
+          <MenuItem value={"block"}>Animation</MenuItem>
+          <MenuItem value={"pattern1"}>Pattern 1</MenuItem>
+          <MenuItem value={"pattern2"}>Pattern 2</MenuItem>
+          <MenuItem value={"flip"}>Flipbook</MenuItem>
           <MenuItem value={"rings"}>Rings</MenuItem>
           <MenuItem value={"pbr"}>Physically based rendering</MenuItem>
         </Select>

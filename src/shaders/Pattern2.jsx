@@ -4,7 +4,7 @@ import { extend, useFrame } from "@react-three/fiber";
 import patternVertexShader from "./patternVertex.glsl";
 import patternFragmentShader from "./patternFragment.glsl";
 
-const Pattern = () => {
+const Pattern2 = () => {
   const PatternMaterial = shaderMaterial(
     { time: 0 },
     patternVertexShader,
@@ -29,4 +29,4 @@ const Pattern = () => {
   );
 };
 
-export default Pattern;
+export default Pattern2;

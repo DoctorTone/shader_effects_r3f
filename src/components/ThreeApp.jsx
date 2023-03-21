@@ -9,8 +9,6 @@ const ThreeApp = () => {
 
   return (
     <>
-      {/* <ambientLight intensity={SCENE.ambientIntensity} />
-      <pointLight position={SCENE.lightPosition} /> */}
       <Stage adjustCamera={2} intensity={0.5} shadows="contact" environment="city">
         <Effect name={activeEffect} />
       </Stage>
