@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { OrbitControls, Grid } from "@react-three/drei";
+import { OrbitControls, Grid, Stage } from "@react-three/drei";
 import { SCENE } from "../config/Config.js";
 import Effect from "../effects/Effect.jsx";
 import useStore from "../state/store.js";
@@ -9,9 +9,11 @@ const ThreeApp = () => {
 
   return (
     <>
-      <ambientLight intensity={SCENE.ambientIntensity} />
-      <pointLight position={SCENE.lightPosition} />
-      <Effect name={activeEffect} />
+      {/* <ambientLight intensity={SCENE.ambientIntensity} />
+      <pointLight position={SCENE.lightPosition} /> */}
+      <Stage adjustCamera={2} intensity={0.5} shadows="contact" environment="city">
+        <Effect name={activeEffect} />
+      </Stage>
       <OrbitControls />
       <Grid
         renderOrder={-1}
