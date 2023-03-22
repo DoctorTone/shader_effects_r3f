@@ -12,7 +12,7 @@ const BlockAnimation = () => {
     {
       time: 0,
       amplitude: 0.25,
-      frequency: 3.5,
+      frequency: 5.25,
       map: new THREE.Texture(),
     },
     blockVertexShader,
