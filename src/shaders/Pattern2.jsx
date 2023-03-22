@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { shaderMaterial } from "@react-three/drei";
 import { extend, useFrame } from "@react-three/fiber";
-import patternVertexShader from "./patternVertex.glsl";
-import patternFragmentShader from "./patternFragment.glsl";
+import patternVertexShader from "./pattern2Vertex.glsl";
+import patternFragmentShader from "./pattern2Fragment.glsl";
 
 const Pattern2 = () => {
   const PatternMaterial = shaderMaterial(
