@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useStore = create((set) => ({
-  activeEffect: "block",
+  activeEffect: "pattern1",
   setActiveEffect: (effect) => set({ activeEffect: effect }),
 }));
 
