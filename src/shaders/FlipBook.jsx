@@ -10,7 +10,7 @@ const TEXTURE_WIDTH = 5;
 const TEXTURE_HEIGHT = 5;
 
 const FlipBook = () => {
-  const flipTexture = useTexture("./src/assets/fire.jpg");
+  const flipTexture = useTexture("./assets/fire.jpg");
 
   const materialRef = useRef();
   const elapsedTime = useRef(0);

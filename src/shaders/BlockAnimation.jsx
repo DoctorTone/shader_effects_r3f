@@ -6,7 +6,7 @@ import blockVertexShader from "./blockVertex.glsl";
 import blockFragmentShader from "./blockFragment.glsl";
 
 const BlockAnimation = () => {
-  const texture = useTexture("./src/assets/wood.jpg");
+  const texture = useTexture("./assets/wood.jpg");
   // const texture = useTexture("./src/assets/debra_weird.jpg");
   const BlockMaterial = shaderMaterial(
     {
