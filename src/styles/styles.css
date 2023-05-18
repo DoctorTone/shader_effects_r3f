@@ -35,5 +35,17 @@ body {
 }
 #effect {
   left: 2%;
-  top: 12.5%;
+  top: 10.5%;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  #effect {
+    top: 17.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  #effect {
+    top: 10.5%;
+  }
 }
