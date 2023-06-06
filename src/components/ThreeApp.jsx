@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import React, { Suspense } from "react";
 import { OrbitControls, Grid, Stage } from "@react-three/drei";
 import { SCENE } from "../config/Config.js";
 import Effect from "../effects/Effect.jsx";
@@ -9,7 +9,11 @@ const ThreeApp = () => {
 
   return (
     <>
-      <Stage adjustCamera={2} intensity={0.5} shadows="contact" environment="city">
+      <Stage
+        adjustCamera={2}
+        intensity={0.5}
+        shadows="contact"
+        environment="city">
         <Effect name={activeEffect} />
       </Stage>
       <OrbitControls />

@@ -11,7 +11,7 @@ const SteelBunny = (props) => {
   const map = useLoader(RGBELoader, "./assets/skylit.hdr");
   const { nodes, materials } = useGLTF("./assets/bunny.gltf");
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position-y={-0.25}>
       <Environment files="./assets/skylit.hdr" background blur={0.7} />
       <mesh geometry={nodes.bunny.geometry}>
         <meshPhysicalMaterial

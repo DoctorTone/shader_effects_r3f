@@ -20,7 +20,7 @@ const Pattern2 = () => {
   extend({ PatternMaterial });
 
   return (
-    <group rotation-y={-Math.PI / 2} scale={1.5}>
+    <group rotation-y={-Math.PI / 2} scale={1.5} position-y={-0.25}>
       <mesh>
         <sphereGeometry />
         <patternMaterial ref={materialRef} />

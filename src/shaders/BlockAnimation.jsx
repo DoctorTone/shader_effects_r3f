@@ -28,10 +28,12 @@ const BlockAnimation = () => {
   extend({ BlockMaterial });
 
   return (
-    <mesh>
-      <boxGeometry args={[3, 3, 3]} />
-      <blockMaterial ref={materialRef} map={texture} />
-    </mesh>
+    <group>
+      <mesh>
+        <boxGeometry args={[3, 3, 3]} />
+        <blockMaterial ref={materialRef} map={texture} />
+      </mesh>
+    </group>
   );
 };
 
