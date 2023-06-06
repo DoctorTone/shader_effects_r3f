@@ -5,7 +5,7 @@ import Spinner from "react-bootstrap/Spinner";
 export const Loading = () => {
   return (
     <Html>
-      <Spinner animation="grow" />
+      <Spinner animation="grow" variant="warning" />
     </Html>
   );
 };

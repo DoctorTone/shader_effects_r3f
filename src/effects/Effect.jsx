@@ -5,19 +5,16 @@ import Pattern2 from "../shaders/Pattern2.jsx";
 import Rings from "../components/Rings.jsx";
 import FlipBook from "../shaders/FlipBook.jsx";
 import SteelBunny from "../components/SteelBunny.jsx";
-import { Loading } from "../components/Loading.jsx";
 
 const Effect = ({ name }) => {
   return (
     <>
-      <Suspense fallback={<Loading />}>
-        {name === "block" && <BlockAnimation />}
-        {name === "pattern1" && <Pattern1 />}
-        {name === "pattern2" && <Pattern2 />}
-        {name === "flip" && <FlipBook />}
-        {name === "rings" && <Rings />}
-        {name === "pbr" && <SteelBunny />}
-      </Suspense>
+      {name === "block" && <BlockAnimation />}
+      {name === "pattern1" && <Pattern1 />}
+      {name === "pattern2" && <Pattern2 />}
+      {name === "flip" && <FlipBook />}
+      {name === "rings" && <Rings />}
+      {name === "pbr" && <SteelBunny />}
     </>
   );
 };
