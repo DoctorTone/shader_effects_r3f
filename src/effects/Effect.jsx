@@ -4,6 +4,7 @@ import Pattern1 from "../shaders/Pattern1.jsx";
 import Pattern2 from "../shaders/Pattern2.jsx";
 import Rings from "../components/Rings.jsx";
 import FlipBook from "../shaders/FlipBook.jsx";
+import Holes from "../shaders/Holes.jsx";
 import SteelBunny from "../components/SteelBunny.jsx";
 
 const Effect = ({ name }) => {
@@ -14,6 +15,7 @@ const Effect = ({ name }) => {
       {name === "pattern2" && <Pattern2 />}
       {name === "flip" && <FlipBook />}
       {name === "rings" && <Rings />}
+      {name === "holes" && <Holes />}
       {name === "pbr" && <SteelBunny />}
     </>
   );

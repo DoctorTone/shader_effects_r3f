@@ -32,6 +32,7 @@ const EffectSelect = () => {
           <MenuItem value={"pattern2"}>Generative Pattern 2</MenuItem>
           <MenuItem value={"block"}>Animation</MenuItem>
           <MenuItem value={"rings"}>Rings</MenuItem>
+          <MenuItem value={"holes"}>Holes</MenuItem>
           <MenuItem value={"pbr"}>Physically based rendering</MenuItem>
         </Select>
       </FormControl>
