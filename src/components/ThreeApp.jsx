@@ -10,11 +10,7 @@ const ThreeApp = () => {
   return (
     <>
       <Suspense fallback={<Loading />}>
-        <Stage
-          adjustCamera={2}
-          intensity={0.5}
-          shadows="contact"
-          environment="city">
+        <Stage adjustCamera={2} intensity={0.5} shadows="contact">
           <Effect name={activeEffect} />
         </Stage>
         <Grid
